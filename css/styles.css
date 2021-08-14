@@ -1,0 +1,288 @@
+body{
+    margin: 0px;
+}
+    
+.imagesProducts{
+    max-width:35%;
+    width:675px;
+}
+
+.title{
+    font-family: cursive;
+    font-size: 200%;
+    margin-bottom: 5px;
+}
+
+.principalMenu{
+    font-size: x-large;
+}
+
+#menuButton{
+    position: relative;
+    top: 4px;
+    background-color: transparent;
+    border: none;
+}
+
+#menuDesplegable{
+    filter: invert(1);
+    height: 35px;
+}
+
+.logo{
+    width: 34px;
+    height: 36px;
+    position: relative;
+    top: -10px;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #112679;
+    /* position: fixed; */
+}
+
+.navMenu{
+    position: relative;
+    top: 15px;
+    padding-right: 5px;
+}
+
+.iconosNav{
+    height: 25px;
+    filter: invert(1);
+}
+
+.iconGeo{
+    height: 23px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* padding: 10px 0px; */
+}
+
+.carousel-positionImage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.imagesCarrusel{
+    max-width:50%;
+    width:675px;
+}
+
+.servImages{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px 23px;
+}
+
+.imagenServ{
+    max-width:15%;
+    width:675px;
+}
+
+.linkTextServ{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 20px;
+    padding-left: 5px;
+    font-size: 120%;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.promocionesCatDog{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    right: 0.1%;
+}
+
+.promocionesCatDog2{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.promocionesCatDog2 :hover{
+    opacity: 0;
+}
+
+.imageProm{
+    max-width: 25%;
+    width: 675px;
+}
+
+.imageProm2{
+    max-width: 25%;
+    width: 675px;
+    height: 313px;
+}
+
+.marcas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.imageMarca{
+    max-width: 35%;
+    width: 675px;
+    padding: 10px 0px;
+}
+
+.nuestrosClientes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.huella1{
+    width: 20px;
+    height: 20px;
+    transform: rotate(343deg);
+    padding: 0px 5px;
+}
+
+.clientName{
+    text-align: center;
+    font-size: 28px;
+    margin: 10px 0px 0px;
+}
+
+.huella2{
+    width: 20px;
+    height: 20px;
+    transform: rotate(24deg);
+    padding: 0px 5px;
+}
+
+.imageClient{
+    max-width: 25%;
+    width: 675px;
+    padding: 0px 2px;
+}
+
+.entrega-MdePago{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.imageEntrega-MdePago{
+    max-width:5%;
+    width:675px;
+    padding-left: 5px;
+}
+
+footer{
+    display: flex;
+}
+
+#CopyRight{
+    padding-bottom: 3%;
+}
+
+#redesContainer{
+    font-size: x-large;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding-right: 15px;
+}
+
+#whatsapp{
+    width: 30px;
+    height: 30px;
+}
+#instagram{
+    width: 30px;
+    height: 30px;
+}
+#facebook{
+    width: 30px;
+    height: 30px;
+}
+
+.linkPrincipalMenu{
+    text-decoration: none;
+    color: white;
+    font-family: cursive;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.linkMenu{
+    display: inline-flex;
+    list-style-type: none;
+    /* display: none; */
+}
+ul li{
+    padding: 0px 10px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.productos{
+    align-content: center;
+}
+
+th{
+    color: black;
+    background-color: teal;
+}
+
+tr{
+    background-color: brown;
+}
+table ul li{
+    color:cornflowerblue;
+}
+
+table ol li{
+    color:coral;
+}
+
+.localImage{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.localImage:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,0.8));
+}
+
+.imageUbic{
+    width: 100%;
+}
+
+.mapa{
+    padding-right: 5px;
+}
+
+@media screen and (max-width: 780px) {
+    .marcas {
+            flex-direction: column;
+      }
+}
