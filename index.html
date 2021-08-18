@@ -12,27 +12,57 @@
 
     <body>
         <header>
-            <nav>
-                <a href="./index.html" class="linkPrincipalMenu">PSOrion</a>
-                <img src="./images/orion.png" class="logo">
-                <ul class="linkMenu">
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./pages/productos.html">Productos</a></li>
-                    <li><a href="./pages/servicio-de-Peluquería.html">Servicio de Peluquería</a></li>
-                    <li><a href="./pages/nuestros-clientes.html">Nuestros clientes</a></li>
-                    <li><a href="./pages/contáctenos.html">Contáctenos</a></li>
-                    <li><a href="./pages/quienes-somos.html">Quienes Somos</a></li>
-                </ul>
-            </nav>
-
-            <div>
-                <nav class="navMenu">
-                    <img class="iconosNav" src="./images/icons/cart2.svg" alt="tuCarrito">
-                    <img class="iconosNav" src="./images/icons/person-fill.svg" alt="usuario">
-                    <a href="./pages/quienes-somos.html"><img class="iconosNav iconGeo" src="./images/icons/geo-alt-fill.svg" alt="ubicacion"></a>
-                </nav>
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">PSOrion</a>
+              <img src="./images/orion.png" class="logo d-inline-block align-text-top">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                  <a class="nav-link" href="./pages/productos.html">Productos</a>
+                  <a class="nav-link" href="./pages/servicio-de-Peluquería.html">Servicio de Peluquería</a>
+                  <a class="nav-link" href="./pages/nuestros-clientes.html">Nuestros clientes</a>
+                  <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modalContactenos">Contáctenos</a>
+                  <a class="nav-link" href="./pages/quienes-somos.html">Quienes Somos</a>
+                  <!-- Modal -->
+                  <div class="modal fade" id="modalContactenos" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                   <div class="modal-dialog">
+                     <div class="modal-content">
+                       <div class="modal-header">
+                         <h5 class="modal-title" id="modalContactenosLabel">Dejanos tu Mensaje</h5>
+                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                       </div>
+                       <div class="modal-body">
+                        <form>
+                          <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Tu mail:</label>
+                            <input type="text" class="form-control" id="recipient-name" placeholder="example@gmail.com">
+                          </div>
+                          <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Mensaje:</label>
+                            <textarea class="form-control" id="message-text" rows="3"></textarea>
+                          </div>
+                        </form>
+                       </div>
+                       <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Enviar Mensaje</button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+                </div>
+              </div>
             </div>
-            
+          </nav>
+          <div class="navMenu">
+            <img class="iconosNav" src="./images/icons/cart2.svg" alt="tuCarrito">
+            <img class="iconosNav" src="./images/icons/person-fill.svg" alt="usuario">
+            <a href="./pages/quienes-somos.html"><img class="iconosNav iconGeo" src="./images/icons/geo-alt-fill.svg" alt="ubicacion"></a>
+          </div>
         </header>
     
         <section class="content">

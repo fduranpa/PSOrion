@@ -1,7 +1,7 @@
 body{
     margin: 0px;
 }
-    
+
 .imagesProducts{
     max-width:35%;
     width:675px;
@@ -32,29 +32,35 @@ body{
 .logo{
     width: 34px;
     height: 36px;
-    position: relative;
-    top: -10px;
+    margin: 0px 5px;
 }
 
 header{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     background-color: #112679;
     /* position: fixed; */
 }
 
+.navbar-brand{
+    color: white;
+}
+
+.nav-link{
+    cursor:pointer;
+}
+
 .navMenu{
-    position: relative;
-    top: 15px;
-    padding-right: 5px;
+    position: absolute;
+    right: 1%;
+    top: 12px;
 }
 
 .iconosNav{
     height: 25px;
     filter: invert(1);
 }
-
 .iconGeo{
     height: 23px;
 }
@@ -285,4 +291,15 @@ table ol li{
     .marcas {
             flex-direction: column;
       }
+    .navMenu {
+        right: 3%;
+        top: 12px;
+    }
+    .servImages{
+        font-size: 10px;
+    }
+    #redesContainer{
+        right: 10px;
+        padding-right: 0px;
+    }
 }
