@@ -91,7 +91,7 @@ header{
 }
 
 .imagenServ{
-    max-width:15%;
+    width:10%;
 }
 
 .linkTextServ{
@@ -295,7 +295,7 @@ table ol li{
         top: 12px;
     }
     .servImages{
-        font-size: 10px;
+        font-size: 14px;
     }
     #redesContainer{
         right: 10px;
