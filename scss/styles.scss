@@ -42,6 +42,9 @@ header{
             height: 25px;
             filter: invert(1);
         }
+        .iconLogin{
+            cursor: pointer;
+        }
         .iconGeo{
             height: 23px;
         }
@@ -52,6 +55,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
     .carousel-positionImage{
         display: flex;
         flex-direction: row;
@@ -169,18 +173,14 @@ header{
     .productos{
         align-content: center;
     }
+}
 
+.content-quienesSomos{
     .localImage{
+        display: flex;
         position: relative;
         margin-bottom: 10px;
-    }
-
-    .localImage:before{
-        content: "";
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,0.8));
+        width: 50%;
     }
 
     .imageUbic{
@@ -188,6 +188,7 @@ header{
     }
 
     .mapa{
+        display: flex;
         padding-right: 5px;
     }
 }
@@ -240,6 +241,18 @@ table ul li{
 
 table ol li{
     color:coral;
+}
+
+.card-footer{
+    text-align: right;
+}
+
+.productos{
+    width: 70%;
+}
+
+.button-comprar{
+    background-color: $principalColor;
 }
 
 @media screen and (max-width: 780px) {

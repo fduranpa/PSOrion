@@ -21,160 +21,116 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                   <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                    <a class="nav-link" href="productos.html">Productos</a>
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                    <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
                     <a class="nav-link" href="servicio-de-Peluquería.html">Servicio de Peluquería</a>
                     <a class="nav-link" href="nuestros-clientes.html">Nuestros clientes</a>
-                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modalContactenos">Contáctenos</a>
+                    <a class="nav-link" href="contáctenos.html">Contáctenos</a>
                     <a class="nav-link" href="quienes-somos.html">Quienes Somos</a>
-                    <!-- Modal -->
-                    <div class="modal fade" id="modalContactenos" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                     <div class="modal-dialog">
-                       <div class="modal-content">
-                         <div class="modal-header">
-                           <h5 class="modal-title" id="modalContactenosLabel">Dejanos tu Mensaje</h5>
-                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                         </div>
-                         <div class="modal-body">
-                          <form>
-                            <div class="mb-3">
-                              <label for="recipient-name" class="col-form-label">Tu mail:</label>
-                              <input type="text" class="form-control" id="recipient-name" placeholder="example@gmail.com">
-                            </div>
-                            <div class="mb-3">
-                              <label for="message-text" class="col-form-label">Mensaje:</label>
-                              <textarea class="form-control" id="message-text" rows="3"></textarea>
-                            </div>
-                          </form>
-                         </div>
-                         <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                          <button type="button" class="btn btn-primary">Enviar Mensaje</button>
-                         </div>
-                       </div>
-                     </div>
-                   </div>
                   </div>
                 </div>
               </div>
             </nav>
             <div class="navMenu">
               <img class="iconosNav" src="../images/icons/cart2.svg" alt="tuCarrito">
-              <img class="iconosNav" src="../images/icons/person-fill.svg" alt="usuario">
+              <a class="iconLogin"><img class="iconosNav" src="../images/icons/person-fill.svg" data-bs-toggle="modal" data-bs-target="#modalLogin" alt="usuario"></a>
               <a href="quienes-somos.html"><img class="iconosNav iconGeo" src="../images/icons/geo-alt-fill.svg" alt="ubicacion"></a>
+              <!-- Modal -->
+              <div class="modal fade" id="modalLogin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <img src="../images/orion.png" class="logo d-inline-block align-text-top">
+                      <h5 class="modal-title" id="modalContactenosLabel">Inicie Sesión</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                     <form>
+                       <div class="mb-3">
+                          <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="example@gmail.com">
+                            <label for="floatingInput">Usuario o Email</label>
+                          </div>
+                        </div>
+                       <div class="mb-3">
+                          <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña">
+                            <label for="floatingPassword">Contraseña</label>
+                          </div>
+                       </div>
+                     </form>
+                    </div>
+                    <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                     <button type="button" class="btn btn-primary">Login</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </header>
 
-        <br>
-
-        <section class="grid">
-            <h2>Nuestros Productos</h2>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div class="gridContent">
-                <img src="../images/Productos/OldPrince1 Bolsa.jpg" alt="OldPrince Bolsa" class="imagesProducts">
-            </div>
-            <div class="gridContent">
-                <img src="../images/Productos/proplanBolsa1.jpg" alt="Proplan Bolsa" class="imagesProducts">
-            </div>
-            <div class="gridContent">
-                <img src="../images/Productos/proplanBolsa2.jpg" alt="Proplan Bolsa" class="imagesProducts">
-            </div>
-            <div class="gridContent">
-                <img src="../images/Productos/RoyalCaninBolsa1.jpg" alt="RoyalCaninBolsa" class="imagesProducts">    
-            </div>
-
-            <div>
-                <ul>
-                    <li>Mejora la piel y el pelo</li>
-                    <li>Reduce la intolerancia alimentaria</li>
-                    <li>Refuerza el sistema inmunológico intestinal.</li>
-                </ul>    
-            </div>
-
-            <div>
-                <ul>
-                    <li>Recomendado para perro cachorro.</li>
-                    <li>Formulado especialmente para raza medianas.</li>
-                    <li>Comida seca.</li>
-                    <li>Sabor a pollo/arroz.</li>
-                    <li>Sabor y nutrición completa para tu mascota.</li>
-                </ul>
-            </div>
-
-            <div>
-                <ul>
-                    <li>Recomendado para perro cachorro.</li>
-                    <li>Formulado especialmente para raza medianas.</li>
-                    <li>Comida seca.</li>
-                    <li>Sabor a pollo/arroz.</li>
-                    <li>Sabor y nutrición completa para tu mascota.</li>
-                </ul>
-            </div>
-
-            <div>
-                <ul>
-                    <li>Recomendado para perro adulto.</li>
-                    <li>Formulado especialmente para raza pequeñas.</li>
-                    <li>Comida seca.</li>
-                    <li>Sabor a mix.</li>
-                    <li>Sabor y nutrición completa para tu mascota.</li>
-                </ul>
-            </div>
-
-            <!--<div>
-                 <table border="1">
-                    <tr>
-                        <th>Tipo de Alimento</th>
-                        <th>Marca</th>
-                        <th>Pesos Disponibles</th>
-                        <th>Ingredientes</th>
-                        <th>Cantidad Recomendada</th>
-                    </tr>
-                    <tr>
-                        <td>Perro</td>
-                        <td>Old Prince</td>
-                        <td>3Kg - 15Kg</td>
-                        <td>
-                            <ol>
-                                <li>Harina de Cordero</li>
-                                <li>Arroz Integral</li>
-                                <li>Arveja</li>
-                                <li>Aceite de Salmon</li>
-                            </ol>
-                        </td>
-                        <td>
-                            <ul>
-                                <li>1Kg a 5Kg: 40 - 110gr</li>
-                                <li>6Kg a 10Kg: 125 - 180gr</li>
-                                <li>11Kg a 20Kg: 190 - 280gr</li>
-                                <li>21Kg a 30Kg: 290 - 375gr</li>
-                                <li>31Kg a Más: 385 - 455gr</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Gato</td>
-                        <td>Old Prince</td>
-                        <td>1Kg – 3Kg - 7,5Kg</td>
-                        <td>
-                            <ol>
-                                <li>Harina de Cordero</li>
-                                <li>Arroz Integral</li>
-                                <li>Arveja</li>
-                                <li>Aceite de Salmon</li>
-                            </ol>
-                        </td>
-                        <td>
-                            <ul>
-                                <li>2Kg a 3,5Kg: 30 - 55gr</li>
-                                <li>3,6Kg a 6,5Kg: 55 - 100gr</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </table> 
-            </div>-->
+        <section class="content">
+            <div class="row row-cols-1 row-cols-md-3 g-4 productos">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="../images/Productos/AltaGama.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Alta Gama</h5>
+                      <p class="card-text">
+                        <ul>
+                          <li>Fragancia Lavanda.</li>
+                          <li>Máxima capacidad de absorción.</li>
+                          <li>Máxima desodorización, perfumado con perlas de lavanda.</li>
+                          <li>Higiene prolongada garantizada.</li>
+                        </ul>
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary button-comprar">Comprar</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="../images/Productos/poopyPets.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">POOPY PETS</h5>
+                      <p class="card-text">
+                        <ul>
+                          <li>Súper Absorbente.</li>
+                          <li>100% natural (sin perfumes ni químicos).</li>
+                          <li>Inhibe los malos olores.</li>
+                          <li>Biodegradable.</li>
+                          <li>No produce barro.</li>
+                        </ul>
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary button-comprar">Comprar</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="../images/Productos/Stonecat.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">StoneCat</h5>
+                      <p class="card-text">
+                        <ul>
+                          <li>Arena sanitaria aglomerante para gatos</li>
+                          <li>Captura olores.</li>
+                          <li>Fácil de limpiar.</li>
+                          <li>100% natural.</li>
+                        </ul>
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary button-comprar">Comprar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </section>
 
         <br>
