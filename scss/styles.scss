@@ -1,6 +1,8 @@
 $principalColor: #112679;
 $colorLetters-Header-Footer: #ffffff;
-
+$redSocialW: wttp;
+$redSocialI: inst;
+$redSocialF: face;
 body{
     margin: 0px;
 }
@@ -204,17 +206,27 @@ footer{
         bottom: 20px;
         right: 20px;
         padding-right: 15px;
-        #whatsapp{
-            width: 30px;
-            height: 30px;
+
+        @if $redSocialW == wttp{
+            #whatsapp{
+                width: 30px;
+                height: 30px;
+                background-color: green;
+            }
         }
-        #instagram{
-            width: 30px;
-            height: 30px;
+        @if $redSocialI == inst{
+            #instagram{
+                width: 30px;
+                height: 30px;
+                background-color: purple;
+            }
         }
-        #facebook{
-            width: 30px;
-            height: 30px;
+        @if $redSocialF == face{
+            #facebook{
+                width: 30px;
+                height: 30px;
+                background-color: blue;
+            }
         }
     }
 }
@@ -225,22 +237,6 @@ ul li{
         text-decoration: none;
         color: $colorLetters-Header-Footer;
     }
-}
-
-th{
-    color: black;
-    background-color: teal;
-}
-
-tr{
-    background-color: brown;
-}
-table ul li{
-    color:cornflowerblue;
-}
-
-table ol li{
-    color:coral;
 }
 
 .card-footer{

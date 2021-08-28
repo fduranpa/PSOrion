@@ -150,32 +150,22 @@ footer {
     padding-right: 15px; }
     footer #redesContainer #whatsapp {
       width: 30px;
-      height: 30px; }
+      height: 30px;
+      background-color: green; }
     footer #redesContainer #instagram {
       width: 30px;
-      height: 30px; }
+      height: 30px;
+      background-color: purple; }
     footer #redesContainer #facebook {
       width: 30px;
-      height: 30px; }
+      height: 30px;
+      background-color: blue; }
 
 ul li {
   padding: 0px 10px; }
   ul li a {
     text-decoration: none;
     color: #ffffff; }
-
-th {
-  color: black;
-  background-color: teal; }
-
-tr {
-  background-color: brown; }
-
-table ul li {
-  color: cornflowerblue; }
-
-table ol li {
-  color: coral; }
 
 .card-footer {
   text-align: right; }
